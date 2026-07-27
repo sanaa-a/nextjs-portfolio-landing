@@ -16,7 +16,7 @@ client-side loading spinners.
 ## Run it locally
 
 1. **Get the code** - either:
-   - Clone it: `git clone https://github.com/<your-username>/<your-repo>.git`
+   - Clone it: `git clone https://github.com/sanaa-a/Skillova_Q9.git`
    - Or click **Code → Download ZIP** on GitHub and extract it
 2. Open the folder in VS Code (or any editor)
 3. Open a terminal in that folder and install dependencies:
