@@ -20,8 +20,8 @@ client-side loading spinners.
    - Or click **Code → Download ZIP** on GitHub and extract it
 2. Open the folder in VS Code (or any editor)
 3. Open a terminal in that folder and install dependencies:
-   -npm install
+   - npm install
 Start the dev server:
-   -npm run dev
+   - npm run dev
    - Open (http://localhost:3000) in your browser
 
