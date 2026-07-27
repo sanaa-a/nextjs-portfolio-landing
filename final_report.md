@@ -10,18 +10,18 @@ A client wanted a fast, modern landing page to showcase a grid of portfolio item
 
 ## What was built
 A single-page developer portfolio:
-1. Nav — hexagonal logo mark, section links with an animated underline, social media icons.
-2. Hero — a centered split headline around an SVG centerpiece: an asymmetric gradient blob split by a circuit trace, with a slow-spinning dashed ring and pulsing dots.
-3. Marquee — a looping ticker strip with a mountain peaks style texture.
-4. Project grid — nine case-study cards pairing a real project name with a live, real-English summary sentence and real likes/views numbers fetched from DummyJSON.
-5. Cards use an asymmetric cut-corner shape, a gradient accent bar, and lift with a color block shadow on hover.
-6. Stack strip — a tilted row of skills.
-7. Footer — contact details.
+1. Nav - hexagonal logo mark, section links with an animated underline, social media icons.
+2. Hero - a centered split headline around an SVG centerpiece: an asymmetric gradient blob split by a circuit trace, with a slow-spinning dashed ring and pulsing dots.
+3. Marquee - a looping ticker strip with a mountain peaks style texture.
+4. Project grid -nine case-study cards pairing a real project name with a live, real-English summary sentence and real likes/views numbers fetched from DummyJSON.
+5. Cards use an asymmetric cut-corner shape and lift with a color block shadow on hover.
+6. Stack strip - a tilted row of skills.
+7. Footer - contact details.
 
 ## Architecture and data flow
 The fetch happens inside a Server Component, not in the browser. There's no client-side loading state, and no API call visible in devtools.
 
-`next: { revalidate: 3600 }` means the data silently refreshes at most once an hour in the background (Incremental Static Regeneration), so the page is served as static HTML on every request but never goes stale for long without a manual rebuild.
+`next: { revalidate:3600 }` means the data silently refreshes at most once an hour in the background (Incremental Static Regeneration), so the page is served as static HTML on every request but never goes stale for long without a manual rebuild.
 
 `npm run build` confirms this: the `/` route is listed as `○ (Static)` in the build output.
 
